@@ -1,0 +1,17 @@
+<div class="container">
+    <app-nav-bar></app-nav-bar>
+    <div class="main-content" >
+    <div class="top-content" >
+        <h3>Search Results </h3>
+    </div>
+    <div class="image-list" >   
+     <div *ngIf="imageList.length == 0" class="no-data" > No Image Found </div>
+        <div class="single-image" *ngFor="let data of imageList">
+            <img class="pic" [src]="enviroment.imgUrl+data.path" alt="" srcset="">
+            <div class="image-name" >{{data.name}}</div> 
+        </div>
+    </div>
+
+    
+    </div>   
+    </div>

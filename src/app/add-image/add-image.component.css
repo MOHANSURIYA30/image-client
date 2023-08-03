@@ -1,0 +1,171 @@
+.container
+{
+    width: 100%;
+}
+
+.main-content
+{
+    /* background-color: green; */
+    width: 100%;
+    padding: 3vh 5vh ;
+    height:90vh ;
+}
+
+
+.top-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-content h3
+{
+    font-weight: 200;
+    font-size: 150%;
+
+}
+
+.search-content
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-content input
+{
+    width: 60%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.search-content button
+{
+    width: 20%;
+    background-color: black;
+    border: 0px ;
+    color: white;
+    border-radius: 5px;
+}
+
+.add 
+{
+    width: 10%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 120%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.image-list
+{
+    width: 100%;
+    padding:3vh 5vh ;
+    margin-top:15px;
+    height: 78vh;
+    overflow-y: scroll;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.single-image
+{
+    padding: 15px;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.image-name
+{
+    font-weight: 700;
+}
+.delete
+{
+    color: red;
+    cursor: pointer;
+}
+
+.pic
+{
+    width: 250px;
+    max-height: 270px;
+    overflow-y: hidden;
+}
+
+.overlay-content
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(216, 216, 216, 0.877);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-popup
+{
+   width: 40%;
+   background-color: white;
+   padding: 15px; 
+   border-radius: 5px;
+}
+
+.popup-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.close
+{
+  font-weight: 700;
+  font-size: 120%;
+  cursor: pointer;  
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.popup-mid
+{
+    margin-top: 25px;
+}
+
+
+.upload-add-buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.upload,.add-image
+{
+    padding:10px 25px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preview {
+    height: 150px;
+    width: 175px;
+    margin: 0 0 10px 0;
+}

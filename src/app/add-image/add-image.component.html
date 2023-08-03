@@ -1,0 +1,42 @@
+<div *ngIf="popup" class="overlay-content" >
+ <div class="add-popup" >
+  <div class="popup-top">
+    <h2> Add Image</h2>
+    <div class="close" (click)="closePopup()" >X</div>
+  </div>
+
+  <div class="popup-mid" >
+    <img *ngIf="URL" class="preview" src="{{URL}}">
+    <div *ngIf="image" >{{image.name}}</div>
+   <div class="upload-add-buttons" >
+    <label class="upload" >Upload Image
+        <input type="file" (change)="onFileSelected($event)" accept="image/*" >
+    </label>
+     <button class="add-image" (click)=" createImage()">Add</button>
+   </div> 
+  </div>
+   
+ </div>    
+</div>
+
+<div class="container">
+<app-nav-bar></app-nav-bar>
+<div class="main-content" >
+<div class="top-content" >
+    <h3>Image Collections</h3>
+    <div class="search-content" >
+        <input  [ngModel]="name" (ngModelChange)="name = $event" placeholder="Search" type="text">
+        <button (click)="showSearch(name)" >Search</button>
+        <div class="add" (click)="showPopup()" >+</div>
+    </div>
+</div>
+<div class="image-list" >
+    <div class="single-image" *ngFor="let data of imageList">
+        <img class="pic" [src]="enviroment.imgUrl+data.path" alt="" srcset="">
+        <div class="image-name" >{{data.name}}</div>
+       <div class="delete" (click)="delete(data._id)" >Delete</div> 
+    </div>
+</div>
+
+</div>   
+</div>

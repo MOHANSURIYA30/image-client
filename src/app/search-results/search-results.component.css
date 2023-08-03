@@ -1,0 +1,76 @@
+.container
+{
+    width: 100%;
+}
+
+.main-content
+{
+    /* background-color: green; */
+    width: 100%;
+    padding: 3vh 5vh ;
+    height:90vh ;
+}
+
+
+.top-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-content h3
+{
+    font-weight: 200;
+    font-size: 150%;
+
+}
+
+
+
+.image-list
+{
+    width: 100%;
+    padding:3vh 5vh ;
+    margin-top:15px;
+    height: 78vh;
+    overflow-y: scroll;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.single-image
+{
+    padding: 15px;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.image-name
+{
+    font-weight: 700;
+}
+.delete
+{
+    color: red;
+    cursor: pointer;
+}
+
+.pic
+{
+    width: 250px;
+    max-height: 270px;
+    overflow-y: hidden;
+}
+
+
+.no-data
+{
+    text-align: center;
+}
